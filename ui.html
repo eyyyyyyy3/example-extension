@@ -1,0 +1,16 @@
+<body>
+  <h2>HEY I AM EXTENSION ONE</h2>
+  <button onclick="sayClick()">Click me!</button>
+  <button onclick="postSomething()">Post to plugin!</button>
+  <script>
+
+  function sayClick() {
+    console.log("click");
+  }
+
+  function postSomething() {
+    window.parent.postMessage("hey from a button");
+  }
+  onmessage = (data) => {console.log(data.data)};
+  </script>
+</body>

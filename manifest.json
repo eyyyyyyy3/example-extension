@@ -1,0 +1,17 @@
+{
+	"manifestVersion": "1.0",
+	"apiVersion": "1",
+	"runtime": "native",
+	"name": "first",
+	"publisher": "vici",
+	"version": "1.0",
+	"license": "GNU",
+	"displayName": "First Extension",
+	"entrypoint": "main.js",
+	"extensionDependencies": [],
+  "ui": {
+    "main": "ui.html",
+    "second": "uiTwo.html"
+  },
+	"icon": "icon.png"
+}
